@@ -51,7 +51,7 @@ sleep($delay);
 
 // Connect to server
 echo("Connect to server\n");
-$db_connection = mysql_connect('tzn-drexel-2.cbqyy1dvl5yb.us-east-1.rds.amazonaws.com','worker','3dUngEyE$');
+$db_connection = mysql_connect('ireland2.c4qdarhnlwde.eu-west-1.rds.amazonaws.com','worker','3dUngEyE$');
 if (!$db_connection) {
     die('*** Error: could not connect to database: ' . mysql_error() . "\n");
 }
@@ -65,7 +65,7 @@ if (!$db_set_charset_result) {
 
 // Select database (schema)
 echo("Select database (schema)\n");
-$db_select_result = mysql_select_db('tzn3');
+$db_select_result = mysql_select_db('tzn3_ireland');
 if (!$db_select_result) {
     die('*** Error: could not select database: ' . mysql_error() . "\n");
 }
